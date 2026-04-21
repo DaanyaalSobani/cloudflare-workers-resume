@@ -2,49 +2,433 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<BaseHead
+			title="Daanyaal Sobani — Senior Software Engineer"
+			description="Resume of Daanyaal Sobani, Senior Software Engineer specializing in production data systems, full-stack development, and cloud infrastructure."
+		/>
 	</head>
 	<body>
 		<Header />
 		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
-				template serves as a lightweight, minimally-styled starting point for anyone looking to build
-				a personal website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to <a href="https://docs.astro.build/"
-					>read the docs
-				</a> or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out <a
-					href="https://github.com/Charca/astro-blog-template"
-					>astro-blog-template
-				</a> by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
+			<div class="resume">
+				<header class="resume-header">
+					<h1>Daanyaal Sobani</h1>
+					<p class="tagline">Senior Software Engineer</p>
+					<div class="contact">
+						<a href="tel:+14164277485">416-427-7485</a>
+						<span class="sep">·</span>
+						<a href="mailto:daanyaal.sobani@gmail.com">daanyaal.sobani@gmail.com</a>
+						<span class="sep">·</span>
+						<a href="https://www.linkedin.com/in/daanyaal-sobani/" target="_blank" rel="noopener">LinkedIn</a>
+						<span class="sep">·</span>
+						<a href="https://x.com/daanyaalss" target="_blank" rel="noopener">x.com/daanyaalss</a>
+					</div>
+				</header>
+
+				<section>
+					<h2 class="section-title">Summary</h2>
+					<p>
+						Senior engineer with 5+ years of production ownership across data pipelines, APIs, and
+						full-stack applications. Built and operate a 500GB+/day ETL platform on Azure; deployed
+						this resume on Cloudflare Workers. Previously embedded within client engineering
+						organizations at PwC — writing production code as a technical extension of their team,
+						not advising from the outside. AI-native practitioner: Claude Code and Cursor are
+						first-class tools in my daily development cycle. Track record of translating ambiguous
+						business requirements into scalable systems that ship and stay up.
+					</p>
+				</section>
+
+				<section>
+					<h2 class="section-title">Experience</h2>
+
+					<div class="job">
+						<div class="job-header">
+							<div class="job-left">
+								<span class="company">Propel Holdings</span>
+								<span class="role">Senior Data Engineer</span>
+							</div>
+							<span class="dates">Apr 2023 – Present</span>
+						</div>
+						<ul>
+							<li>
+								Designed and own a 500GB+/day ETL platform on Azure (Airflow, Docker) processing
+								transactional data from 10+ sources into a centralized warehouse — end-to-end
+								production ownership including on-call reliability and incident response
+							</li>
+							<li>
+								Built a domain-specific language framework in Python to automate complex journal
+								entry generation, eliminating a class of manual reconciliation work across the
+								finance org
+							</li>
+							<li>
+								Architected the company-wide data warehouse schema from scratch, consolidating all
+								reporting into a single source of truth for executive and operational analytics
+							</li>
+							<li>
+								Optimized critical MySQL stored procedures for high-volume data transformation
+								paths, achieving 60% query performance improvement
+							</li>
+							<li>
+								Containerized all data processing workloads with Docker, enabling consistent
+								deployment and simplified incident rollback across environments
+							</li>
+							<li>
+								Delivered real-time executive dashboards that compressed multi-day reporting cycles
+								into live, self-serve views
+							</li>
+						</ul>
+					</div>
+
+					<div class="job">
+						<div class="job-header">
+							<div class="job-left">
+								<span class="company">Rogers Communications</span>
+								<span class="role">Network Engineer</span>
+							</div>
+							<span class="dates">Mar 2022 – Apr 2023</span>
+						</div>
+						<ul>
+							<li>
+								Built web-based network visualization tools (JavaScript + Google Maps API) providing
+								real-time geographic intelligence to the sales team, directly improving
+								deal-support velocity
+							</li>
+							<li>
+								Designed and maintained a network configuration testing environment to validate
+								deployments against customer SLAs before production rollout
+							</li>
+							<li>
+								Automated multi-source data processing (60MB+ files across 10+ feeds) using Python
+								and PowerShell to generate actionable stakeholder reports
+							</li>
+							<li>
+								Led migration of 300+ department documents to a centralized repository, improving
+								team operational knowledge management
+							</li>
+						</ul>
+					</div>
+
+					<div class="job">
+						<div class="job-header">
+							<div class="job-left">
+								<span class="company">PricewaterhouseCoopers LLC</span>
+								<span class="role">Associate Software Developer</span>
+							</div>
+							<span class="dates">Feb 2019 – Jan 2020</span>
+						</div>
+						<ul>
+							<li>
+								Embedded within a publicly traded loyalty points provider's engineering org to
+								build a full-stack accounting automation platform — reduced client monthly workload
+								by 40 hours through robust API design and production-grade delivery
+							</li>
+							<li>
+								Authored API and database documentation adopted across multiple client and internal
+								teams, enabling smoother cross-team integrations
+							</li>
+							<li>
+								Delivered 3+ production C# projects on schedule within an agile delivery model
+							</li>
+						</ul>
+					</div>
+
+					<div class="job">
+						<div class="job-header">
+							<div class="job-left">
+								<span class="company">The Emerging Media Lab, UBC</span>
+								<span class="role">Software Developer</span>
+							</div>
+							<span class="dates">May 2018 – Feb 2019</span>
+						</div>
+						<ul>
+							<li>
+								Shipped production applications with complex interactive features against hard
+								academic deadlines
+							</li>
+							<li>
+								Built Unity3D prototypes to rapidly validate product concepts for faculty
+								stakeholders
+							</li>
+							<li>
+								Proposed and prototyped new technology integrations to improve instructional
+								tooling and faculty productivity
+							</li>
+						</ul>
+					</div>
+				</section>
+
+				<section>
+					<h2 class="section-title">Projects</h2>
+					<div class="project">
+						<div class="project-header">
+							<span class="project-name">This Resume Site</span>
+							<a
+								href="https://cloudflare-workers-resume.daanyaal-dev.workers.dev/"
+								target="_blank"
+								rel="noopener"
+								class="project-link">cloudflare-workers-resume.daanyaal-dev.workers.dev</a
+							>
+						</div>
+						<p>
+							Built and deployed to Cloudflare Workers using Astro SSR with the
+							<code>@astrojs/cloudflare</code> adapter. Demonstrates direct, hands-on experience
+							with the Workers runtime, Wrangler deployment tooling, and edge-native SSR. Assembled
+							with Claude Code.
+						</p>
+					</div>
+				</section>
+
+				<section>
+					<h2 class="section-title">Education</h2>
+					<div class="job-header">
+						<div class="job-left">
+							<span class="company">University of British Columbia</span>
+							<span class="role">B.A.Sc., Electrical Engineering</span>
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<h2 class="section-title">Skills</h2>
+					<div class="skills-grid">
+						<div class="skill-row">
+							<span class="skill-label">Languages</span>
+							<span class="skill-value">Python, TypeScript, JavaScript, C#, C++, PHP</span>
+						</div>
+						<div class="skill-row">
+							<span class="skill-label">Data & Infrastructure</span>
+							<span class="skill-value"
+								>SQL, MySQL, Apache Airflow, dbt, Spark, Docker, Azure</span
+							>
+						</div>
+						<div class="skill-row">
+							<span class="skill-label">Platform</span>
+							<span class="skill-value"
+								>Cloudflare Workers, Astro, REST API Design, System Architecture</span
+							>
+						</div>
+						<div class="skill-row">
+							<span class="skill-label">AI Tooling</span>
+							<span class="skill-value">Claude Code, Cursor</span>
+						</div>
+					</div>
+				</section>
+			</div>
 		</main>
 		<Footer />
 	</body>
 </html>
+
+<style>
+	main {
+		max-width: 860px;
+		margin: 0 auto;
+		padding: 2em 1em 4em;
+	}
+
+	.resume {
+		background: white;
+		border-radius: 8px;
+		box-shadow: var(--box-shadow);
+		padding: 3em 3.5em;
+	}
+
+	/* Header */
+	.resume-header {
+		text-align: center;
+		margin-bottom: 2.5em;
+		padding-bottom: 2em;
+		border-bottom: 2px solid rgb(var(--gray-light));
+	}
+
+	.resume-header h1 {
+		font-size: 2.8em;
+		margin-bottom: 0.1em;
+		letter-spacing: -0.02em;
+	}
+
+	.tagline {
+		color: rgb(var(--gray));
+		font-size: 1.05em;
+		margin: 0.2em 0 0.8em;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+	}
+
+	.contact {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 0.25em;
+		font-size: 0.9em;
+	}
+
+	.contact a {
+		color: rgb(var(--gray-dark));
+		text-decoration: none;
+	}
+
+	.contact a:hover {
+		color: var(--accent);
+	}
+
+	.sep {
+		color: rgb(var(--gray));
+		padding: 0 0.2em;
+	}
+
+	/* Section titles */
+	section {
+		margin-bottom: 2.2em;
+	}
+
+	.section-title {
+		font-size: 0.8em;
+		text-transform: uppercase;
+		letter-spacing: 0.12em;
+		color: var(--accent);
+		border-bottom: 2px solid var(--accent);
+		padding-bottom: 0.3em;
+		margin-bottom: 1.2em;
+	}
+
+	section > p {
+		font-size: 0.95em;
+		line-height: 1.75;
+		margin: 0;
+		color: rgb(var(--gray-dark));
+	}
+
+	/* Jobs */
+	.job {
+		margin-bottom: 1.8em;
+	}
+
+	.job-header {
+		display: flex;
+		justify-content: space-between;
+		align-items: baseline;
+		flex-wrap: wrap;
+		gap: 0.25em;
+		margin-bottom: 0.6em;
+	}
+
+	.job-left {
+		display: flex;
+		flex-direction: column;
+		gap: 0.1em;
+	}
+
+	.company {
+		font-weight: 700;
+		font-size: 1em;
+		color: rgb(var(--black));
+	}
+
+	.role {
+		font-size: 0.9em;
+		color: var(--accent);
+		font-style: italic;
+	}
+
+	.dates {
+		font-size: 0.85em;
+		color: rgb(var(--gray));
+		white-space: nowrap;
+	}
+
+	.job ul {
+		margin: 0;
+		padding-left: 1.2em;
+	}
+
+	.job li {
+		font-size: 0.9em;
+		line-height: 1.65;
+		color: rgb(var(--gray-dark));
+		margin-bottom: 0.35em;
+	}
+
+	/* Projects */
+	.project {
+		margin-bottom: 1em;
+	}
+
+	.project-header {
+		display: flex;
+		align-items: baseline;
+		gap: 0.75em;
+		flex-wrap: wrap;
+		margin-bottom: 0.4em;
+	}
+
+	.project-name {
+		font-weight: 700;
+		font-size: 0.95em;
+	}
+
+	.project-link {
+		font-size: 0.85em;
+		color: var(--accent);
+	}
+
+	.project p {
+		font-size: 0.9em;
+		line-height: 1.65;
+		margin: 0;
+		color: rgb(var(--gray-dark));
+	}
+
+	/* Skills */
+	.skills-grid {
+		display: flex;
+		flex-direction: column;
+		gap: 0.55em;
+	}
+
+	.skill-row {
+		display: flex;
+		gap: 1em;
+		font-size: 0.9em;
+		line-height: 1.5;
+	}
+
+	.skill-label {
+		font-weight: 700;
+		color: rgb(var(--black));
+		min-width: 160px;
+		flex-shrink: 0;
+	}
+
+	.skill-value {
+		color: rgb(var(--gray-dark));
+	}
+
+	@media (max-width: 720px) {
+		.resume {
+			padding: 2em 1.25em;
+		}
+
+		.resume-header h1 {
+			font-size: 2em;
+		}
+
+		.job-header {
+			flex-direction: column;
+		}
+
+		.skill-row {
+			flex-direction: column;
+			gap: 0.1em;
+		}
+
+		.skill-label {
+			min-width: unset;
+		}
+	}
+</style>

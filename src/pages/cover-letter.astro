@@ -1,0 +1,216 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead
+			title="Cover Letter — Daanyaal Sobani"
+			description="Cover letter from Daanyaal Sobani for the Forward Deployed Engineer role at Cloudflare."
+		/>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<div class="letter">
+				<div class="letter-meta">
+					<div class="sender">
+						<strong>Daanyaal Sobani</strong>
+						<span>daanyaal.sobani@gmail.com</span>
+						<span>416-427-7485</span>
+						<span
+							><a href="https://www.linkedin.com/in/daanyaal-sobani/" target="_blank" rel="noopener"
+								>linkedin.com/in/daanyaal-sobani</a
+							></span
+						>
+					</div>
+					<div class="date">April 20, 2026</div>
+				</div>
+
+				<div class="recipient">
+					<strong>Cloudflare Hiring Team</strong><br />
+					Forward Deployed Engineer — Toronto, ON
+				</div>
+
+				<div class="salutation">Dear Cloudflare team,</div>
+
+				<div class="body">
+					<p>
+						The site you're reading this on was built and deployed to Cloudflare Workers as part of
+						this application. That's the short version of why I'm a fit for the Forward Deployed
+						Engineer role.
+					</p>
+
+					<p>
+						I'm a senior software engineer with 5+ years of production ownership across data
+						pipelines, APIs, and full-stack applications. At Propel Holdings, I architected and
+						operate a 500GB+/day ETL platform on Azure — owning not just the design but the on-call
+						reliability of systems the business depends on daily. I've built a domain-specific
+						language to eliminate a class of manual work, optimized query paths by 60%, and shipped
+						executive dashboards that replaced multi-day reporting cycles with real-time views. At
+						PricewaterhouseCoopers, I was embedded directly in a client's engineering organization
+						— not advising from the outside, but writing production code that reduced their monthly
+						workload by 40 hours. That's the FDE model I already know.
+					</p>
+
+					<p>
+						What draws me to this role specifically is the combination of Cloudflare's platform
+						breadth and the customer-embedding model. I want to write production code that runs at
+						Cloudflare scale — Workers, D1, KV, AI Gateway — not just consult on architecture. I
+						learn platforms by shipping on them. Building this site gave me direct hands-on
+						experience with the Workers runtime, the <code>@astrojs/cloudflare</code> adapter, and
+						Wrangler's deployment model. I use Claude Code and Cursor as first-class tools in my
+						development cycle — not supplements. The JD calls for "AI-native development"; that's
+						just how I work.
+					</p>
+
+					<p>
+						My background in network engineering at Rogers also gives me an instinct for how
+						infrastructure behaves at scale — latency, routing, configuration drift, incident
+						response under pressure. I know what "five nines" means operationally, not just on
+						paper. And having worked across backend data, networking, and full-stack application
+						layers, I'm comfortable contributing wherever a customer's engineering organization
+						needs depth.
+					</p>
+
+					<p>
+						I'd welcome the chance to talk through what the first 90 days at a strategic account
+						would look like, and how my background translates. Thank you for your time.
+					</p>
+				</div>
+
+				<div class="closing">
+					<p>Sincerely,</p>
+					<p><strong>Daanyaal Sobani</strong></p>
+					<div class="closing-links">
+						<a href="/">Resume</a>
+						<span class="sep">·</span>
+						<a href="mailto:daanyaal.sobani@gmail.com">daanyaal.sobani@gmail.com</a>
+						<span class="sep">·</span>
+						<a href="https://www.linkedin.com/in/daanyaal-sobani/" target="_blank" rel="noopener"
+							>LinkedIn</a
+						>
+						<span class="sep">·</span>
+						<a href="https://x.com/daanyaalss" target="_blank" rel="noopener">x.com/daanyaalss</a>
+					</div>
+				</div>
+			</div>
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+	main {
+		max-width: 760px;
+		margin: 0 auto;
+		padding: 2em 1em 4em;
+	}
+
+	.letter {
+		background: white;
+		border-radius: 8px;
+		box-shadow: var(--box-shadow);
+		padding: 3.5em 4em;
+		font-size: 0.95em;
+		line-height: 1.8;
+	}
+
+	.letter-meta {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		margin-bottom: 2.5em;
+		padding-bottom: 1.5em;
+		border-bottom: 2px solid rgb(var(--gray-light));
+	}
+
+	.sender {
+		display: flex;
+		flex-direction: column;
+		gap: 0.1em;
+		font-size: 0.9em;
+		color: rgb(var(--gray));
+	}
+
+	.sender strong {
+		color: rgb(var(--black));
+		font-size: 1.05em;
+	}
+
+	.sender a {
+		color: var(--accent);
+		text-decoration: none;
+	}
+
+	.date {
+		font-size: 0.9em;
+		color: rgb(var(--gray));
+	}
+
+	.recipient {
+		margin-bottom: 1.8em;
+		font-size: 0.95em;
+		color: rgb(var(--gray-dark));
+		line-height: 1.6;
+	}
+
+	.salutation {
+		margin-bottom: 1.2em;
+		color: rgb(var(--gray-dark));
+	}
+
+	.body p {
+		margin-bottom: 1.4em;
+		color: rgb(var(--gray-dark));
+	}
+
+	.body code {
+		font-size: 0.88em;
+	}
+
+	.closing {
+		margin-top: 2em;
+		color: rgb(var(--gray-dark));
+	}
+
+	.closing p {
+		margin: 0 0 0.2em;
+	}
+
+	.closing-links {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.25em;
+		margin-top: 0.8em;
+		font-size: 0.85em;
+	}
+
+	.closing-links a {
+		color: var(--accent);
+		text-decoration: none;
+	}
+
+	.closing-links a:hover {
+		text-decoration: underline;
+	}
+
+	.sep {
+		color: rgb(var(--gray));
+		padding: 0 0.1em;
+	}
+
+	@media (max-width: 720px) {
+		.letter {
+			padding: 2em 1.25em;
+		}
+
+		.letter-meta {
+			flex-direction: column;
+			gap: 1em;
+		}
+	}
+</style>

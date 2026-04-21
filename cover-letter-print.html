@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cover Letter — Daanyaal Sobani</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --orange: #F6821F;
+      --black: #0f1219;
+      --gray: #60739f;
+      --gray-light: #e5e9f0;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-size: 10.5pt;
+      line-height: 1.75;
+      color: var(--black);
+      background: #f4f5f7;
+    }
+
+    .page {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 20mm auto;
+      background: white;
+      padding: 20mm 22mm 18mm;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+    }
+
+    /* Top bar */
+    .top-bar {
+      border-top: 3px solid var(--orange);
+      margin-bottom: 10mm;
+      padding-top: 5mm;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .sender-name {
+      font-size: 18pt;
+      font-weight: 600;
+      color: var(--black);
+      letter-spacing: -0.02em;
+    }
+
+    .sender-title {
+      font-size: 9pt;
+      color: var(--gray);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-top: 1mm;
+    }
+
+    .sender-contact {
+      text-align: right;
+      font-size: 8.5pt;
+      color: var(--gray);
+      line-height: 1.6;
+    }
+
+    .sender-contact a {
+      color: var(--orange);
+      text-decoration: none;
+    }
+
+    /* Date + recipient */
+    .date {
+      font-size: 9.5pt;
+      color: var(--gray);
+      margin-bottom: 7mm;
+    }
+
+    .recipient {
+      font-size: 10pt;
+      line-height: 1.6;
+      margin-bottom: 8mm;
+      color: var(--black);
+    }
+
+    .recipient strong {
+      font-weight: 600;
+    }
+
+    .salutation {
+      margin-bottom: 5mm;
+      font-size: 10.5pt;
+    }
+
+    /* Body */
+    .body p {
+      margin-bottom: 5mm;
+      font-size: 10.5pt;
+      color: #222;
+    }
+
+    code {
+      font-family: 'SF Mono', 'Consolas', monospace;
+      font-size: 9pt;
+      background: #f3f4f6;
+      padding: 1px 4px;
+      border-radius: 3px;
+      color: var(--orange);
+    }
+
+    /* Closing */
+    .closing {
+      margin-top: 8mm;
+    }
+
+    .closing p {
+      font-size: 10.5pt;
+      margin-bottom: 1mm;
+    }
+
+    .closing .name {
+      font-weight: 600;
+      font-size: 11pt;
+      margin-top: 1mm;
+    }
+
+    .closing-links {
+      margin-top: 4mm;
+      font-size: 8.5pt;
+      color: var(--gray);
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .closing-links a {
+      color: var(--orange);
+      text-decoration: none;
+    }
+
+    .closing-links .sep {
+      color: var(--gray-light);
+    }
+
+    /* Bottom rule */
+    .bottom-rule {
+      border-bottom: 1px solid var(--gray-light);
+      margin-top: 10mm;
+    }
+
+    @media print {
+      body { background: white; }
+      .page {
+        margin: 0;
+        padding: 18mm 20mm;
+        box-shadow: none;
+        width: 100%;
+        min-height: 100vh;
+      }
+      @page {
+        size: A4;
+        margin: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="top-bar">
+      <div>
+        <div class="sender-name">Daanyaal Sobani</div>
+        <div class="sender-title">Senior Software Engineer</div>
+      </div>
+      <div class="sender-contact">
+        416-427-7485<br />
+        daanyaal.sobani@gmail.com<br />
+        <a href="https://www.linkedin.com/in/daanyaal-sobani/">linkedin.com/in/daanyaal-sobani</a><br />
+        <a href="https://x.com/daanyaalss">x.com/daanyaalss</a>
+      </div>
+    </div>
+
+    <div class="date">April 20, 2026</div>
+
+    <div class="recipient">
+      <strong>Cloudflare Hiring Team</strong><br />
+      Forward Deployed Engineer — Toronto, ON
+    </div>
+
+    <div class="salutation">Dear Cloudflare team,</div>
+
+    <div class="body">
+      <p>
+        The site you're reading this on —
+        <a href="https://cloudflare-workers-resume.daanyaal-dev.workers.dev">cloudflare-workers-resume.daanyaal-dev.workers.dev</a>
+        — was built and deployed to Cloudflare Workers as part of this application.
+        That's the short version of why I'm a fit for the Forward Deployed Engineer role.
+      </p>
+
+      <p>
+        I'm a senior software engineer with 5+ years of production ownership across data pipelines, APIs,
+        and full-stack applications. At Propel Holdings, I architected and operate a 500GB+/day ETL platform
+        on Azure — owning not just the design but the on-call reliability of systems the business depends on
+        daily. I've built a domain-specific language to eliminate a class of manual work, optimized query paths
+        by 60%, and shipped executive dashboards that replaced multi-day reporting cycles with real-time views.
+        At PricewaterhouseCoopers, I was embedded directly in a client's engineering organization — not
+        advising from the outside, but writing production code that reduced their monthly workload by 40 hours.
+        That's the FDE model I already know.
+      </p>
+
+      <p>
+        What draws me to this role specifically is the combination of Cloudflare's platform breadth and the
+        customer-embedding model. I want to write production code that runs at Cloudflare scale — Workers, D1,
+        KV, AI Gateway — not just consult on architecture. I learn platforms by shipping on them. Building this
+        resume site gave me direct, hands-on experience with the Workers runtime, the
+        <code>@astrojs/cloudflare</code> adapter, and Wrangler's deployment model. I use Claude Code and Cursor
+        as first-class tools in my development cycle — not supplements. The JD calls for "AI-native
+        development"; that's just how I work.
+      </p>
+
+      <p>
+        My background in network engineering at Rogers also gives me an instinct for how infrastructure behaves
+        at scale — latency, routing, configuration drift, incident response under pressure. I know what "five
+        nines" means operationally, not just on paper. And having worked across backend data, networking, and
+        full-stack application layers, I'm comfortable contributing wherever a customer's engineering
+        organization needs depth.
+      </p>
+
+      <p>
+        I'd welcome the chance to talk through what the first 90 days at a strategic account would look like,
+        and how my background translates. Thank you for your time.
+      </p>
+    </div>
+
+    <div class="closing">
+      <p>Sincerely,</p>
+      <p class="name">Daanyaal Sobani</p>
+      <div class="closing-links">
+        <a href="https://cloudflare-workers-resume.daanyaal-dev.workers.dev">Resume site</a>
+        <span class="sep">·</span>
+        <a href="mailto:daanyaal.sobani@gmail.com">daanyaal.sobani@gmail.com</a>
+        <span class="sep">·</span>
+        <a href="https://www.linkedin.com/in/daanyaal-sobani/">LinkedIn</a>
+        <span class="sep">·</span>
+        <a href="https://x.com/daanyaalss">x.com/daanyaalss</a>
+      </div>
+    </div>
+
+    <div class="bottom-rule"></div>
+  </div>
+</body>
+</html>
